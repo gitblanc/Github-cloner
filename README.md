@@ -1,6 +1,8 @@
 ![](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![](https://img.shields.io/badge/GNU%20Bash-4EAA25?style=for-the-badge&logo=GNU%20Bash&logoColor=white)
 
+![](https://img.shields.io/badge/Made%20for-Linux-blueviolet)
+
 ````
           _             _             _            _             _            _     
         /\ \           _\ \          /\ \         /\ \     _    /\ \         /\ \   
@@ -23,7 +25,6 @@ I hope you use this and will love an star :-) ⭐
 ### Notes:
 1. This script will create a folder called as your github username in the directory you executed the script.
 2. If you want to pass al data to a pendrive or hard drive, you must copy it doing Ctrl + C, Ctrl + V. This is because FAT filesystems **don't support unix file permissions**. All the files and directories get masked with the permissions you mounted the fs with.
-3. If you are using **Windows**, make sure you have Git and Git Bash to use this script. You can open it clicking on the Bash button or putting this on cmd -> `"C:\Program Files\Git\bin\sh.exe" --login`
 ---
 # Instructions
  1. Clone this repository
@@ -33,7 +34,6 @@ I hope you use this and will love an star :-) ⭐
  ---
  # Available for:
  ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
- ![](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
  ![](https://img.shields.io/badge/manjaro-35BF5C?style=for-the-badge&logo=manjaro&logoColor=white)
  ![](https://img.shields.io/badge/SUSE-0C322C?style=for-the-badge&logo=SUSE&logoColor=white)
  ![](https://img.shields.io/badge/Alpine_Linux-0D597F?style=for-the-badge&logo=alpine-linux&logoColor=white)
