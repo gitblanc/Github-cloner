@@ -21,8 +21,9 @@ This script allows you to clone all your repositories (with a limit of 1000) jus
 I hope you use this and will love an star :-) ⭐
 
 ### Notes:
-1. This script will create a folder called as your github username in the directory you executed the script
+1. This script will create a folder called as your github username in the directory you executed the script.
 2. If you want to pass al data to a pendrive or hard drive, you must copy it doing Ctrl + C, Ctrl + V. This is because FAT filesystems **don't support unix file permissions**. All the files and directories get masked with the permissions you mounted the fs with.
+3. If you are using **Windows**, make sure you have Git and Git Bash to use this script. You can open it clicking on the Bash button or putting this on cmd -> `"C:\Program Files\Git\bin\sh.exe" --login`
 ---
 # Instructions
  1. Clone this repository
@@ -32,6 +33,7 @@ I hope you use this and will love an star :-) ⭐
  ---
  # Available for:
  ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+ ![](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
  ![](https://img.shields.io/badge/manjaro-35BF5C?style=for-the-badge&logo=manjaro&logoColor=white)
  ![](https://img.shields.io/badge/SUSE-0C322C?style=for-the-badge&logo=SUSE&logoColor=white)
  ![](https://img.shields.io/badge/Alpine_Linux-0D597F?style=for-the-badge&logo=alpine-linux&logoColor=white)
@@ -40,3 +42,4 @@ I hope you use this and will love an star :-) ⭐
  ![](https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white)
  ![](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
  ![](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+ 
