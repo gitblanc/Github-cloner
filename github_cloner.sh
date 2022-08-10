@@ -18,7 +18,7 @@ menu () {
 	# -----Menu-----
 	while true ; do
         	echo "1. Clone your repositories (1000 max)"
-	        echo "2. Pull a repository"
+	        echo "2. Pull a repository or repositories"
         	echo ""
 	        echo "0. exit"
 		echo ""
@@ -56,6 +56,7 @@ github_puller () {
 		echo "---------------------"
         	echo "Select an option: "
 		echo "1. Pull a repository"
+		echo "2. Pull all the repositories"
 		echo ""
 		echo "0. Exit"
 		echo ""
@@ -67,10 +68,19 @@ github_puller () {
 	    		     cd $ROUTE
 			     git pull 
 			     cd;;
+			[2]) pull_everything;;
 	  		  *) echo "Option not valid."
         esac
 done
+}
 
+pull_everything () {
+	for i in $(echo */); do
+		cd ${i%%/}
+		echo -e "\e[1;95mUpdating ${i%%/}\e[0m"
+		git pull
+		cd ..
+	done
 }
 
 menu
