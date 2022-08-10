@@ -47,8 +47,19 @@ github_cloner () {
 
 	gh auth login
 	gh repo list $USER --limit 1000 | while read -r repo _; do
-	  gh repo clone "$repo" "$repo"
+	  # If the repository exists, it doesn't clone
+	  counter=0
+	  zero=0
+	  if [ ! -d "$repo" ]; then
+             gh repo clone "$repo" "$repo"
+	     counter=$((counter+1))
+	  fi
 	done
+	if [ $counter -eq $zero ]; then
+		echo -e "\e[1;95mCloning finished (Total clones: 0).\e[0m"
+	  else
+		echo -e "\e[1;95mCloning finished (Total clones: $counter).\e[0m"
+	fi
 }
 
 github_puller () {
@@ -75,12 +86,17 @@ done
 }
 
 pull_everything () {
+	cd $USER
+	counter=0
 	for i in $(echo */); do
 		cd ${i%%/}
 		echo -e "\e[1;95mUpdating ${i%%/}\e[0m"
 		git pull
 		cd ..
+		counter=$((counter+1))
 	done
+	echo -e "\e[1;95mUpdate finished (Total pulls: $counter).\e[0m"
+	cd ..
 }
 
 menu
