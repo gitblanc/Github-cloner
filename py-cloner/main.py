@@ -1,8 +1,6 @@
-from github import Github
-# pip install gitpython
-from git import Repo
-# to obtain current directory
 import os
+
+from github import Github
 
 print("_________ .__\n" +
 "\_   ___ \|  |   ____   ____   ___________\n" +
